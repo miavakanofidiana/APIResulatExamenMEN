@@ -3,7 +3,7 @@ Web scrapping qui permet d'obtenir les résultats de BEPC et CEPE à Madagascar
 ## Installation
 Inclure simplement le fichier [MENExamResult.class.php](./MENExamResult.class.php) dans votre code
 ```php
-include 'MENExamEesult.class.php';
+include 'MENExamResult.class.php';
 ```
 ## Exemple d'utilisation
   ### BEPC
