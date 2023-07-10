@@ -19,7 +19,7 @@ Miavaka\MENExamResult::cepe("12345678-A12/12"); //N° Matricule
   ### Autres
   D'autres fonctions sont disponibles comme 
   ```php
-Miavaka\MENExamResult::listCisco(self::EXAM_BEPC);
+Miavaka\MENExamResult::listCisco(Miavaka\MENExamResult::EXAM_BEPC);
 ```
 N'hésitez pas à regrader le code
 ## Contribution
