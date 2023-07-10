@@ -63,7 +63,7 @@ class MENExamResult {
 		$result = [
 			'success' => false, //Initialement FALSE
 		];
-		if (preg_match_all('#<tr class="([^"]*)">\s*<td class="text-center">([^<]+)</td>\s*<td class="text-left">([^<]+)</td>\s*<td class="text-left">([^<]+)</td>\s*<td class="text-left">([^<]+)</td>\s*<td class="text-center">([^<]+)</td>#is', $data, $matches, PREG_SET_ORDER)) {
+		if (preg_match_all('#<tr class="([^"]*)">\s*<td[^>]*>([^<]+)</td>\s*<td[^>]*>([^<]+)</td>\s*<td[^>]*>([^<]+)</td>\s*<td[^>]*>([^<]+)</td>\s*<td[^>]*>([^<]+)</td>#is', $data, $matches, PREG_SET_ORDER)) {
 			$result['success'] = true;
 			foreach ($matches as $m) {
 				$result['data'][] = [
