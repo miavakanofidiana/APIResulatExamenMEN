@@ -170,7 +170,7 @@ class MENExamResult {
 		]);
 		$url = "https://www.education.gov.mg/gre-men/web/ciscos.html";
 		$data = file_get_contents($url, false, $ctx);
-		echo $data;
+		
 		$result = [];
 		if (preg_match_all('#<li class="col-3">([^<]+)</li>#is', $data, $matches, PREG_SET_ORDER)) {
 			foreach ($matches as $m) {
